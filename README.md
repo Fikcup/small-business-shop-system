@@ -15,7 +15,7 @@
 * NodeJS
 * ExpressJS
 * Jest
-* Redis
+* Mongoose
 
 ## Requirements
 
