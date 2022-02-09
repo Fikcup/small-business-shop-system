@@ -4,6 +4,8 @@
 
 <p>Ecommerce web application with both store and customer users.</p>
 
+![EER Diagram](./small_business_eer.png)
+
 ## Technologies
 
 * ReactJS
