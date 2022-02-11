@@ -32,7 +32,7 @@ export class Shop {
     @prop({
         ref: () => User
     })
-    protected addressArr?: Ref<User>;
+    public user!: Ref<User>;
 }
 
 export const ShopModel = getModelForClass(Shop);
