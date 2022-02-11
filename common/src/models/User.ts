@@ -1,10 +1,11 @@
-import { getModelForClass, prop, pre } from '@typegoose/typegoose';
+import { getModelForClass, prop, pre, Ref } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
+import { Address } from './Address';
 
-@pre<UserModel>('save', function() {
+@pre<User>('save', function() {
     // TODO: use bcrypt to encrypt password
 })
-class UserModel {
+export class User {
     @prop({ 
         required: true,
         default: new mongoose.Types.ObjectId() 
@@ -28,13 +29,13 @@ class UserModel {
     })
     protected password!: string;
 
-    @prop()
-    protected addressId?: mongoose.Types.ObjectId;
+    @prop({
+        ref: () => Address
+    })
+    protected addressArr?: Ref<Address>[];
 }
 
-const User = getModelForClass(UserModel);
+export const UserModel = getModelForClass(User);
 
-let document = async () => await User.create({ name: 'User' });
+let document = async () => await UserModel.create({ name: 'User' });
 document();
-
-module.exports = User;
