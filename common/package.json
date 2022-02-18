@@ -1,11 +1,15 @@
 {
   "name": "sb-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "start": "ts-node ./src/server.ts",
-    "test": "jest --watchAll --maxWorkers=1"
+    "clean": "del /S /Q .\\dist\\*",
+    "build": "npm run clean && tsc"
   },
   "keywords": [],
   "author": "",
