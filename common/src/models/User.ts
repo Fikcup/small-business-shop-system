@@ -1,9 +1,21 @@
-import { getModelForClass, prop, pre, Ref } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
+import { getModelForClass, prop, pre, Ref } from '@typegoose/typegoose';
+import bcrypt from 'bcrypt';
+
 import { Address } from './Address';
 
-@pre<User>('save', function() {
-    // TODO: use bcrypt to encrypt password
+@pre<User>('save', function(next) {
+    if (this.isModified('password') || this.isNew) {
+        let pwd = this.password;
+        this.password = bcrypt.hashSync(pwd, 10);
+    }
+
+    if (this.isModified('password') || this.isNew) {
+        let user = this.username;
+        this.username = user.toLowerCase();
+    }
+
+    next();
 })
 export class User {
     @prop({ 
