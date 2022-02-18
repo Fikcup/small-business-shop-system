@@ -11,8 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.3",
-    "sb-common": "^1.0.0",
+    "sb-common": "^1.0.1",
     "ts-node": "^10.5.0"
   },
   "devDependencies": {
