@@ -22,6 +22,12 @@ export class User {
         required: true,
         unique: true
     })
+    public username!: string;
+
+    @prop({
+        required: true,
+        unique: true
+    })
     public email!: string;
 
     @prop({
