@@ -1,0 +1,23 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/server.ts",
+    "test": "jest --watchAll --maxWorkers=1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "sb-common": "^1.0.0",
+    "ts-node": "^10.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.0",
+    "ts-jest": "^27.1.3"
+  }
+}
