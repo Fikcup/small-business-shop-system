@@ -13,7 +13,8 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^4.17.3",
-    "sb-common": "^1.0.3",
+    "mongoose": "^6.2.2",
+    "sb-common": "^1.0.5",
     "ts-node": "^10.5.0"
   },
   "devDependencies": {
