@@ -26,6 +26,7 @@ const typegoose_1 = require("@typegoose/typegoose");
 const mongoose_1 = __importDefault(require("mongoose"));
 const User_1 = require("./User");
 const Shop_1 = require("./Shop");
+const order_status_dto_1 = require("../dtos/order-status.dto");
 class Order {
 }
 __decorate([
@@ -38,7 +39,8 @@ __decorate([
 __decorate([
     (0, typegoose_1.prop)({
         required: true,
-        default: 'order recieved'
+        enum: order_status_dto_1.OrderStatusDto,
+        default: 'RECIEVED'
     }),
     __metadata("design:type", String)
 ], Order.prototype, "status", void 0);

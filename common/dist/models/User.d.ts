@@ -6,7 +6,7 @@ export declare class User {
     img: URL;
     username: string;
     email: string;
-    protected password: string;
-    protected addressArr?: Ref<Address>[];
+    password: string;
+    addressArr?: Ref<Address>[];
 }
 export declare const UserModel: import("@typegoose/typegoose").ReturnModelType<typeof User, import("@typegoose/typegoose/lib/types").BeAnObject>;
