@@ -31,7 +31,7 @@ __decorate([
         required: true,
         default: 'https://imgur.com/0RpFv3U'
     }),
-    __metadata("design:type", URL)
+    __metadata("design:type", String)
 ], User.prototype, "img", void 0);
 __decorate([
     (0, typegoose_1.prop)({

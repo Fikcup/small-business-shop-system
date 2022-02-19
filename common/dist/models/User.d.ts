@@ -3,7 +3,7 @@ import { Ref } from '@typegoose/typegoose';
 import { Address } from './Address';
 export declare class User {
     id: mongoose.Types.ObjectId;
-    img: URL;
+    img: string;
     username: string;
     email: string;
     password: string;

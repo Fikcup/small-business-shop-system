@@ -28,7 +28,7 @@ export class User {
         required: true, 
         default: 'https://imgur.com/0RpFv3U'
     })
-    public img!: URL;
+    public img!: string;
 
     @prop({
         required: true,
