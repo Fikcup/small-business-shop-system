@@ -40,7 +40,7 @@ __decorate([
     (0, typegoose_1.prop)({
         required: true,
         enum: order_status_dto_1.OrderStatusDto,
-        default: 'RECIEVED'
+        default: order_status_dto_1.OrderStatusDto.RECIEVED
     }),
     __metadata("design:type", String)
 ], Order.prototype, "status", void 0);

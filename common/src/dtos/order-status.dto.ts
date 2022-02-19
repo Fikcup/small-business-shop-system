@@ -1,6 +1,6 @@
 export enum OrderStatusDto {
-    'RECIEVED',
-    'PROCESSING',
-    'SHIPPED',
-    'COMPLETED'
+    RECIEVED = 0,
+    PROCESSING = 1,
+    SHIPPED = 2,
+    COMPLETED = 3
 }
