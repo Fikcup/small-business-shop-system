@@ -6,7 +6,7 @@ import { OrderStatusDto } from '../dtos/order-status.dto';
 export declare class Order {
     id: mongoose.Types.ObjectId;
     status: OrderStatusDto;
-    user: Ref<User>;
+    customer: Ref<User>;
     protected shop: Ref<Shop>;
 }
 export declare const OrderModel: import("@typegoose/typegoose").ReturnModelType<typeof Order, import("@typegoose/typegoose/lib/types").BeAnObject>;

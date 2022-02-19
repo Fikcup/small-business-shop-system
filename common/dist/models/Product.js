@@ -24,6 +24,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductModel = exports.Product = void 0;
 const typegoose_1 = require("@typegoose/typegoose");
 const mongoose_1 = __importDefault(require("mongoose"));
+const Shop_1 = require("./Shop");
 class Product {
 }
 __decorate([
@@ -64,7 +65,7 @@ __decorate([
 ], Product.prototype, "quantity", void 0);
 __decorate([
     (0, typegoose_1.prop)({
-        ref: 'Shop'
+        ref: () => Shop_1.Shop
     }),
     __metadata("design:type", Object)
 ], Product.prototype, "shop", void 0);

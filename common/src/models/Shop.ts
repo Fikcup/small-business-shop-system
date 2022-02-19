@@ -30,7 +30,7 @@ export class Shop {
     public img!: URL;
 
     @prop({
-        ref: 'User'
+        ref: () => User
     })
     public user!: Ref<User>;
 }
