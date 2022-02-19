@@ -48,7 +48,7 @@ export class User {
     public password!: string;
 
     @prop({
-        ref: () => Address
+        ref: 'Address'
     })
     public addressArr?: Ref<Address>[];
 }

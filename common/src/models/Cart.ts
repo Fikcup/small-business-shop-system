@@ -11,7 +11,7 @@ export class Cart {
 
     @prop({
         required: true,
-        ref: () => User
+        ref: 'User'
     })
     public user!: Ref<User>;
 }

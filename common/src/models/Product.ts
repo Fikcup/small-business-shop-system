@@ -34,7 +34,7 @@ export class Product {
     public quantity!: number;
 
     @prop({
-        ref: () => Shop
+        ref: 'Shop'
     })
     public shop!: Ref<Shop>;
 }

@@ -25,7 +25,6 @@ exports.UserModel = exports.User = void 0;
 const mongoose_1 = __importDefault(require("mongoose"));
 const typegoose_1 = require("@typegoose/typegoose");
 const bcrypt_1 = __importDefault(require("bcrypt"));
-const Address_1 = require("./Address");
 let User = class User {
 };
 __decorate([
@@ -64,7 +63,7 @@ __decorate([
 ], User.prototype, "password", void 0);
 __decorate([
     (0, typegoose_1.prop)({
-        ref: () => Address_1.Address
+        ref: 'Address'
     }),
     __metadata("design:type", Array)
 ], User.prototype, "addressArr", void 0);

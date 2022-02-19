@@ -20,13 +20,13 @@ export class Order {
 
     @prop({
         required: true,
-        ref: () => User
+        ref: 'User'
     })
     public user!: Ref<User>;
 
     @prop({
         required: true,
-        ref: () => Shop
+        ref: 'Shop'
     })
     protected shop!: Ref<Shop>;
 }
