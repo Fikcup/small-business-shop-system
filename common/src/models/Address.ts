@@ -11,30 +11,30 @@ export class Address {
     @prop({
         required: true
     })
-    protected name!: string;
+    public name!: string;
 
     @prop({
         required: true
     })
-    protected street!: string;
+    public street!: string;
 
     @prop()
-    protected apt?: string;
+    public apt?: string;
 
     @prop({
         required: true
     })
-    protected city!: string;
+    public city!: string;
 
     @prop({
         required: true
     })
-    protected state!: string;
+    public state!: string;
 
     @prop({
         required: true
     })
-    protected zip!: string;
+    public zip!: string;
 }
 
 export const AddressModel = getModelForClass(Address);

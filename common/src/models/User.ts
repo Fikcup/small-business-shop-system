@@ -45,12 +45,12 @@ export class User {
     @prop({
         required: true
     })
-    protected password!: string;
+    public password!: string;
 
     @prop({
         ref: () => Address
     })
-    protected addressArr?: Ref<Address>[];
+    public addressArr?: Ref<Address>[];
 }
 
 export const UserModel = getModelForClass(User);

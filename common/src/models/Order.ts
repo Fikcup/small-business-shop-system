@@ -2,6 +2,7 @@ import { getModelForClass, prop, Ref } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
 import { User } from './User';
 import { Shop } from './Shop';
+import { OrderStatusDto } from '../dtos/order-status.dto';
 
 export class Order {
     @prop({ 
@@ -12,7 +13,8 @@ export class Order {
 
     @prop({ 
         required: true,
-        default: 'order recieved'
+        enum: OrderStatusDto,
+        default: 'RECIEVED'
     })
     public status!: string;
 
