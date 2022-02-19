@@ -2,9 +2,10 @@ import { Ref } from '@typegoose/typegoose';
 import mongoose from 'mongoose';
 import { User } from './User';
 import { Shop } from './Shop';
+import { OrderStatusDto } from '../dtos/order-status.dto';
 export declare class Order {
     id: mongoose.Types.ObjectId;
-    status: string;
+    status: OrderStatusDto;
     user: Ref<User>;
     protected shop: Ref<Shop>;
 }
