@@ -32,6 +32,3 @@ export class Order {
 }
 
 export const OrderModel = getModelForClass(Order);
-
-let document = async () => await OrderModel.create({ name: 'Order' });
-document();

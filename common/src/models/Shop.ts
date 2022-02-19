@@ -36,6 +36,3 @@ export class Shop {
 }
 
 export const ShopModel = getModelForClass(Shop);
-
-let document = async () => await ShopModel.create({ name: 'Shop' });
-document();

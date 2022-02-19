@@ -54,6 +54,3 @@ export class User {
 }
 
 export const UserModel = getModelForClass(User);
-
-let document = async () => await UserModel.create({ name: 'User' });
-document();

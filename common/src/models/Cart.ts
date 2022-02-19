@@ -17,6 +17,3 @@ export class Cart {
 }
 
 export const CartModel = getModelForClass(Cart);
-
-let document = async () => await CartModel.create({ name: 'Cart' });
-document();

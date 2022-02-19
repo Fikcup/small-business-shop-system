@@ -38,6 +38,3 @@ export class Address {
 }
 
 export const AddressModel = getModelForClass(Address);
-
-let document = async () => await AddressModel.create({ name: 'Address' });
-document();

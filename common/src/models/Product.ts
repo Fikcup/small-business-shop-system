@@ -40,6 +40,3 @@ export class Product {
 }
 
 export const ProductModel = getModelForClass(Product);
-
-let document = async () => await ProductModel.create({ name: 'Product' });
-document();
