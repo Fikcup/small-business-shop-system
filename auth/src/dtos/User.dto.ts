@@ -1,4 +1,10 @@
-import { IsString, IsEmail, IsUrl } from 'class-validator';
+import { 
+    IsString, 
+    IsEmail, 
+    IsUrl, 
+    IsArray, 
+    IsOptional 
+} from 'class-validator';
 
 export default class UserDto {
     @IsString()
@@ -11,5 +17,10 @@ export default class UserDto {
     password!: string;
 
     @IsUrl()
+    @IsOptional()
     img?: string;
+
+    @IsArray()
+    @IsOptional()
+    addressArr?: Array<Object>;
 }

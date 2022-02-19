@@ -16,7 +16,7 @@
     "class-validator": "^0.13.2",
     "express": "^4.17.3",
     "mongoose": "^6.2.2",
-    "sb-common": "^1.0.5",
+    "sb-common": "^1.0.19",
     "ts-node": "^10.5.0"
   },
   "devDependencies": {
