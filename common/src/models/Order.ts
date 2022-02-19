@@ -16,7 +16,7 @@ export class Order {
         enum: OrderStatusDto,
         default: OrderStatusDto.RECIEVED
     })
-    public status!: string;
+    public status!: number;
 
     @prop({
         required: true,
