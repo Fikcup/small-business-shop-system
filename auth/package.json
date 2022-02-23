@@ -15,6 +15,7 @@
     "bcrypt": "^5.0.1",
     "class-validator": "^0.13.2",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.2",
     "sb-common": "^1.0.19",
     "ts-node": "^10.5.0"
@@ -22,7 +23,10 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.0",
+    "@types/jsonwebtoken": "^8.5.8",
     "@types/supertest": "^2.0.11",
+    "dotenv": "^16.0.0",
+    "mongodb-memory-server": "^8.4.0",
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.3"
   }
